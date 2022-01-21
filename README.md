@@ -1,0 +1,2 @@
+# exerciciosdiversos
+Exercícios Diversos
