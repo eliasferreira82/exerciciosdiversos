@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+.container{
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #0000CD;
+    flex-wrap: wrap;
+    justify-content:center; /*usando o flex-grow não faz sentido usar justify-content, 
+    de forma que aplicando flex-grow ele vai ocupar todo o espaço necessário do container*/
+    align-content:space-between; 
+    
+}
+.tam0{
+    flex-grow: 0; /*esse é o padrão*/
+}
+.tam1{
+    flex-grow: 1; /*determina como o espaço livre disponíve no elemento pai será distribuido para os elementos filhos
+    Nestes casos se eu for retirando do html as divs, os elementos se ajustam de forma igual*/
+}
+.tam2{
+    flex-grow: 2;
+}
+.tam3{
+    flex-grow: 3;
+}
+.basea{
+    flex-basis: auto; /*esse é o padrão*/
+}
+.base0{
+    flex-basis: 0;  /*força que todos os elementos tenham
+    o mesmo tamanho indepentende do tamanho do conteúdo*/
+}
+.base1{
+    flex-basis: 1;/*colocando o base:1 vai ter um tamanho maior que os outros.Mas a maior utilidade do flex-base 
+    é forçar que a div tenha o mesmo tamanho que as demais independente do tamanho do contúdo*/
+}
+.base2{
+    flex-basis: 2;
+}
+.base3{
+    flex-basis: 3;
+}
+ 
+.flexivel{
+    display: flex;
+}
+.Elias{
+    margin: 5px;
+    padding: 5px;
+    background-color: #1E90FF;
+    text-align: center;
+    font-size: 1em;
+    color: #0000CD;
+    height: 30px;
+}

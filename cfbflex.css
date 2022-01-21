@@ -1,0 +1,34 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+.container{
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #0000CD;
+    flex-wrap: wrap;
+    justify-content:center; /*faz o alinhamento no eixo principal*/
+    align-items:center; /*faz o alinhamento no eixo secundário*/
+    /*align-content: center;/*tem a mesma função que align items
+     porem não deixa o espaçamento entre as div.
+     alinha individualmente os items de um container de acordo com o 'main-axis',
+      já o align-content` alinha o conjunto dos items de container;*/
+     
+      /*(flex-flow: row wrap;) /*faz a mesma função das propriedades
+    flex-direction:row e flex-wrap:wrap mantem em row e a quebra do wrap*/
+}
+ 
+.flexivel{
+    display: flex;
+}
+.Elias{
+    margin: 5px;
+    padding: 5px;
+    background-color: #1E90FF;
+    text-align: center;
+    font-size: 1em;
+    color: #0000CD;
+    height: 30px;
+    width: calc(33.3333% - 20px);
+}
